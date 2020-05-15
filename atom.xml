@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ltd0102.github.io</id>
+    <title>Sakura00&apos;Blog</title>
+    <updated>2020-05-15T09:29:02.359Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ltd0102.github.io"/>
+    <link rel="self" href="https://ltd0102.github.io/atom.xml"/>
+    <subtitle>这里是末语小屋，我现在也不知道该干嘛，且走且看。</subtitle>
+    <logo>https://ltd0102.github.io/images/avatar.png</logo>
+    <icon>https://ltd0102.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, Sakura00&apos;Blog</rights>
+</feed>
