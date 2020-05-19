@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8" />
-<title>Sakura00&#39;Blog</title>
+  <meta charset="UTF-8" />
+<title>关于我 - Sakura00&#39;Blog</title>
 <meta name="description" content="这里是末语小屋，我现在也不知道该干嘛，且走且看。">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -20,10 +20,8 @@
 </head>
 
 <body>
-
-    <div class="layout theme-dark">
-
-        <div class="layout-header">
+  <div class="layout theme-dark">
+    <div class="layout-header">
 
 	<div class="layout-header-main">
 		<div class="container">
@@ -103,8 +101,7 @@
 	</div>
 
 </div>
-        
-        <div class="layout-collapse d-md-none">
+    <div class="layout-collapse d-md-none">
 	<div class="layout-collapse-main">
 		<ul class="layout-collapse-list">
 			
@@ -121,31 +118,70 @@
 	</div>
 </div>
 
-        <div class="layout-banner">
-  <div class="layout-banner-main">
-    <div class="container">
-      <div class="row justify-content-lg-center">
-        <div class="col-12 col-lg-9">
-          <div class="banner">
-            <div class="banner-list row">
-              <div class="item col-12 col-sm-9">
-                
-                
-                <div class="banner-card main">
-                  <a class="card-content" href="https://ltd0102.github.io/Cq5WARBxo/" style="background-image: url('')">
-                    <div class="mask"></div>
-                    <div class="title">
-                      <h3 class="card-title">关于我</h3>
+    <div class="layout-content">
+      <div class="layout-content-main">
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-9">
+              <div class="layout-post">
+                <div class="layout-post-body">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-10">
+                      <div class="layout-post-main m-right m-md-right">
+                        <div class="layout-post-header">
+                          <h1 class="layout-post-title">关于我</h1>
+                          <div class="layout-post-meta">
+                            <div class="item">
+                              
+                            </div>
+                            <div class="item">
+                              <span>2020-05-16</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layout-post-content">
+                          <div class="layout-post-item">
+                            
+                            <h1 id="网站是用来干嘛的">网站是用来干嘛的？</h1>
+<p>简单的说，本网站是用来记录我的一些多看图书的排版，大部分的书会在微信公众号发布，需要的可以关注我的微信公众号“犹贤博弈斋”。</p>
+<h1 id="怎么下载">怎么下载？</h1>
+
+                          </div>
+                        </div>
+                        <div class="layout-post-social">
+                          <div class="item reader">
+                            <div id="/post/Cq5WARBxo/" class="leancloud-visitors view"
+                              data-flag-title="关于我">
+                              <span class="post-meta-item-text">阅读 </span>
+                              <span class="leancloud-visitors-count"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="layout-post-navigation">
+                          <div class="navigation-list">
+                            
+                          </div>
+                        </div>
+
+                        <div class="layout-comments"></div>
+                        
+                      </div>
                     </div>
-                  </a>
-                </div>
-                
-              </div>
-              <div class="col-12 col-sm-3">
-                <div class="row">
-                  
-                  
-                  
+
+                    <div class="col-12 col-lg-2 d-none d-lg-block">
+                      <div class="layout-post-sidebar">
+                        <div class="layout-sidebar-item">
+                          <ul class="markdownIt-TOC">
+<li><a href="#%E7%BD%91%E7%AB%99%E6%98%AF%E7%94%A8%E6%9D%A5%E5%B9%B2%E5%98%9B%E7%9A%84">网站是用来干嘛的？</a></li>
+<li><a href="#%E6%80%8E%E4%B9%88%E4%B8%8B%E8%BD%BD">怎么下载？</a></li>
+</ul>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -153,68 +189,10 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-        <div class="layout-content">
-  <div class="layout-content-main">
-    <div class="container">
-      <div class="row justify-content-lg-center">
-        <div class="col-12 col-lg-9">
-          <div class="card-list">
-            
-            
-            
-            
-            
-          </div>
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
-          
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<script type="text/javascript">
-  //点击加载更多
-  jQuery(document).ready(function ($) {
-    //点击下一页的链接(即那个a标签)
-    $(' .btn-paginator').click(function () {
-      $this = $(this);
-      $this.addClass('loading').text('正在加载'); //给a标签加载一个loading的class属性，用来添加加载效果
-      var href = $this.attr('href'); //获取下一页的链接地址
-      if (href != undefined) { //如果地址存在
-        $.ajax({ //发起ajax请求
-          url: href,
-          //请求的地址就是下一页的链接
-          type: 'get',
-          //请求类型是get
-          error: function (request) {
-            //如果发生错误怎么处理
-          },
-          success: function (data) { //请求成功
-            $this.removeClass('loading').text('加载更多'); //移除loading属性
-            var $res = $(data).find('.card'); //从数据中挑出文章数据，请根据实际情况更改
-            $('.card-list').append($res.fadeIn(
-              500)); //将数据加载加进posts-loop的标签中。
-            var newhref = $(data).find('.btn-paginator').attr('href'); //找出新的下一页链接
-            if (newhref != undefined) {
-              $('.btn-paginator').attr('href', newhref);
-            } else {
-              $('.btn-paginator').remove(); //如果没有下一页了，隐藏
-            }
-          }
-        });
-      }
-      return false;
-    });
-  });
-</script>
-
-        	<div class="layout-footer">
+    	<div class="layout-footer">
 
 		<div class="container">
 			<div class="row justify-content-lg-center">
@@ -266,7 +244,8 @@
 
 	<script type="text/javascript" src='https://ltd0102.github.io/media/scripts/main.js'></script>
 	
-    </div>
+
+  </div>
 </body>
 
 </html>
