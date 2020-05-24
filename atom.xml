@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ltd0102.github.io</id>
     <title>Sakura00&apos;Blog</title>
-    <updated>2020-05-19T07:56:55.267Z</updated>
+    <updated>2020-05-24T09:02:37.996Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ltd0102.github.io"/>
     <link rel="self" href="https://ltd0102.github.io/atom.xml"/>
@@ -19,6 +19,14 @@
         <content type="html"><![CDATA[<h1 id="网站是用来干嘛的">网站是用来干嘛的？</h1>
 <p>简单的说，本网站是用来记录我的一些多看图书的排版，大部分的书会在微信公众号发布，需要的可以关注我的微信公众号“犹贤博弈斋”。</p>
 <h1 id="怎么下载">怎么下载？</h1>
+<p>标签页的网盘里面下载，发布的书会按时间排序的。</p>
+<h1 id="有推介的书">有推介的书</h1>
+<p>可以发送邮件到ltd0106@qq.com或ltd0106@gmail.com。</p>
+<h1 id="侵权问题">侵权问题</h1>
+<p>Github的空间，欧盟的域名，Cloudflare的域名解析和CDN，估计轮不到我头上吧。</p>
+<h1 id="广告时间">广告时间</h1>
+<p>请务必关注一下微信公众号吧<br>
+<img src="https://ltd0102.github.io/post-images/1590310502632.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
