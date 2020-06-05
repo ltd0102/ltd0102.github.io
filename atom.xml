@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ltd0102.github.io</id>
     <title>Sakura00&apos;Blog</title>
-    <updated>2020-06-04T08:26:40.684Z</updated>
+    <updated>2020-06-05T08:10:20.246Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ltd0102.github.io"/>
     <link rel="self" href="https://ltd0102.github.io/atom.xml"/>
@@ -10,6 +10,32 @@
     <logo>https://ltd0102.github.io/images/avatar.png</logo>
     <icon>https://ltd0102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sakura00&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[视频直链测试]]></title>
+        <id>https://ltd0102.github.io/c_tcoA4en/</id>
+        <link href="https://ltd0102.github.io/c_tcoA4en/">
+        </link>
+        <updated>2020-06-05T07:57:18.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="本视频下载自b站u主cj1213s所投稿视频">本视频下载自B站U主——cj1213s所投稿视频</h1>
+<blockquote>
+<p><a href="https://www.bilibili.com/video/BV1AW411d7vA">原地址</a></p>
+</blockquote>
+<h1 id="下载的视频存储在晓黑板网站的晓书包内">下载的视频存储在晓黑板网站的晓书包内</h1>
+<h2 id="视频1">视频1</h2>
+<p><video playsinline webkit-playsinline  controls src='https://pro-video.xiaoheiban.cn/jpp/6e04fccd-c0cc-49a6-b37b-bdc9769516bc.mp4' width='100%'></p>
+## 视频2
+<p><video playsinline webkit-playsinline  controls src='https://pro-video.xiaoheiban.cn/202006/decdf402-fb25-45e2-9cf8-fe6d63850b68.mp4' width='100%'></p>
+## 视频3
+<p><video playsinline webkit-playsinline  controls src='https://pro-video.xiaoheiban.cn/202006/16797b56-1f2c-4f54-b6bf-00453e3ad4a1.mp4' width='100%'></p>
+## 视频4
+<p><video playsinline webkit-playsinline  controls src='https://pro-video.xiaoheiban.cn/202006/0a755ddd-070c-4f0c-bb80-6913111963dc.mp4' width='100%'></p>
+## 视频5
+<p><video playsinline webkit-playsinline  controls src='https://pro-video.xiaoheiban.cn/202006/e990c68d-b217-4194-9cbc-8b73d9ca5cb6.mp4' width='100%'></p>
+## 视频6
+<p><video playsinline webkit-playsinline  controls src='https://pro-video.xiaoheiban.cn/202006/be45aca0-bf96-46a1-9ebb-878116b45c9d.mp4' width='100%'></p>
+## 视频7
+<p><video playsinline webkit-playsinline  controls src='https://pro-video.xiaoheiban.cn/202006/5dfc5d9b-8d2c-4220-b204-3bd73f42e884.mp4' width='100%'></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[多看图书集中排版（1）]]></title>
         <id>https://ltd0102.github.io/9SpKNciCg/</id>
