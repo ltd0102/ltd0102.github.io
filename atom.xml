@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ltd0102.github.io</id>
     <title>Sakura00&apos;Blog</title>
-    <updated>2020-06-05T08:59:07.720Z</updated>
+    <updated>2020-06-05T09:08:17.174Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ltd0102.github.io"/>
     <link rel="self" href="https://ltd0102.github.io/atom.xml"/>
@@ -19,34 +19,6 @@
         <content type="html"><![CDATA[<h1 id="233版v2ray一键安装脚本">233版V2Ray一键安装脚本</h1>
 <pre><code>bash &lt;(curl -s -L https://git.io/v2ray.sh)
 </code></pre>
-<h1 id="ssr一键安装">SSR一键安装</h1>
-<p>这个属于teddysun（秋水）的一键安装。<br>
-本一键安装脚本为服务器端使用，即SSR服务端一键安装。<br>
-服务器系统： CentOS 6 及以上、Debian 7 及以上、Ubuntu 12 及以上<br>
-系统内存支持128M及以上，推荐256M起步。</p>
-<pre><code>wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-chmod +x shadowsocks-all.sh
-./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log
-</code></pre>
-<p>（小提示：如果运行上面第一条命令时，出现找不到wget之类的提示，则表明系统没有预装wget，先运行以下命令完成wget的安装）</p>
-<pre><code>CentOS：
-yum -y install wget
-Ubuntu/Debian：
-apt-get -y install wget
-</code></pre>
-<h2 id="ssr常用命令">SSR常用命令</h2>
-<pre><code>启动SSR：
-/etc/init.d/shadowsocks-r start
-退出SSR：
-/etc/init.d/shadowsocks-r stop
-重启SSR：
-/etc/init.d/shadowsocks-r restart
-SSR状态：
-/etc/init.d/shadowsocks-r status
-卸载SSR：
-./shadowsocks-all.sh uninstall
-</code></pre>
-<p>另外如果需要更改SSR的相关配置参数，配置文件位置在：/etc/shadowsocks-r/config.json</p>
 <h1 id="逗比ssr一键安装脚本">逗比SSR一键安装脚本</h1>
 <p>支持架构：Openvz、KVM、Xen。支持系统： CentOS6+ / Debian6+ / Ubuntu14+。注意事项：附带的BBR/锐速不支持OpenVZ，OVZ VPS安装时不要选择这些附带功能即可。</p>
 <pre><code>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh
@@ -68,6 +40,13 @@ Debian:</p>
 </code></pre>
 <p>CentOS:</p>
 <pre><code>bash tcp_nanqinlang-1.3.2.sh
+</code></pre>
+<h1 id="wget安装">wget安装</h1>
+<p>CentOS：</p>
+<pre><code>yum -y install wget
+</code></pre>
+<p>Ubuntu/Debian：</p>
+<pre><code>apt-get -y install wget
 </code></pre>
 ]]></content>
     </entry>
