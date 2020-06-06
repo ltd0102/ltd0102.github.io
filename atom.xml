@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ltd0102.github.io</id>
     <title>Sakura00&apos;Blog</title>
-    <updated>2020-06-05T12:51:33.013Z</updated>
+    <updated>2020-06-06T07:48:04.633Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ltd0102.github.io"/>
     <link rel="self" href="https://ltd0102.github.io/atom.xml"/>
@@ -23,49 +23,8 @@
 <img src="https://shop.io.mi-img.com/app/shop/img?id=shop_ec08ee594b775eac7d9db6faa3c32801.jpeg" alt="346336.jpg" loading="lazy"><br>
 <img src="https://shop.io.mi-img.com/app/shop/img?id=shop_e55d55fa27da76f4400849a583c8fc05.jpeg" alt="533923.jpg" loading="lazy"><br>
 <img src="https://shop.io.mi-img.com/app/shop/img?id=shop_c0ae269ac856fd15f85eab1600e7f901.jpeg" alt="60094.jpg" loading="lazy"><br>
-<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_16723ce87a1aaff0c17ed34668927cbf.jpeg" alt="610587.jpg" loading="lazy"><br>
 <img src="https://shop.io.mi-img.com/app/shop/img?id=shop_d9ea112e3512c99b20881b05685b4a14.jpeg" alt="0012.jpg" loading="lazy"><br>
 <img src="https://shop.io.mi-img.com/app/shop/img?id=shop_6ccd1056df3af24642ad0871d02b5d0a.jpeg" alt="617159.jpg" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科学上网代码备份]]></title>
-        <id>https://ltd0102.github.io/Ih13UqU24/</id>
-        <link href="https://ltd0102.github.io/Ih13UqU24/">
-        </link>
-        <updated>2020-06-05T08:41:42.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="233版v2ray一键安装脚本">233版V2Ray一键安装脚本</h1>
-<pre><code>bash &lt;(curl -s -L https://git.io/v2ray.sh)
-</code></pre>
-<h1 id="逗比ssr一键安装脚本">逗比SSR一键安装脚本</h1>
-<p>支持架构：Openvz、KVM、Xen。支持系统： CentOS6+ / Debian6+ / Ubuntu14+。注意事项：附带的BBR/锐速不支持OpenVZ，OVZ VPS安装时不要选择这些附带功能即可。</p>
-<pre><code>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh
-</code></pre>
-<h1 id="南琴浪版暴力魔改bbr一键安装脚本">南琴浪版暴力魔改BBR一键安装脚本</h1>
-<p>适用平台：KVM虚拟的VPS服务器。<br>
-适用系统：Debian 7+ 32位/64位（Debian7、Debian8、Debian9）、CentOS 6+ 64（CentOS6、CentOS7）<br>
-Debian版：</p>
-<pre><code>wget --no-check-certificate https://github.com/tcp-nanqinlang/general/releases/download/3.4.2.1/tcp_nanqinlang-fool-1.3.0.sh
-bash tcp_nanqinlang-fool-1.3.0.sh
-</code></pre>
-<p>CentOS版：</p>
-<pre><code>wget --no-check-certificate https://raw.githubusercontent.com/tcp-nanqinlang/general/master/General/CentOS/bash/tcp_nanqinlang-1.3.2.sh
-bash tcp_nanqinlang-1.3.2.sh
-</code></pre>
-<p>重启后<br>
-Debian:</p>
-<pre><code>bash tcp_nanqinlang-fool-1.3.0.sh
-</code></pre>
-<p>CentOS:</p>
-<pre><code>bash tcp_nanqinlang-1.3.2.sh
-</code></pre>
-<h1 id="wget安装">wget安装</h1>
-<p>CentOS：</p>
-<pre><code>yum -y install wget
-</code></pre>
-<p>Ubuntu/Debian：</p>
-<pre><code>apt-get -y install wget
-</code></pre>
 ]]></content>
     </entry>
     <entry>
