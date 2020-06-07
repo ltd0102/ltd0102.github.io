@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ltd0102.github.io</id>
+    <id>https://moyun.eu.org</id>
     <title>Sakura00&apos;Blog</title>
-    <updated>2020-06-07T12:45:12.743Z</updated>
+    <updated>2020-06-07T12:45:55.941Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://ltd0102.github.io"/>
-    <link rel="self" href="https://ltd0102.github.io/atom.xml"/>
+    <link rel="alternate" href="https://moyun.eu.org"/>
+    <link rel="self" href="https://moyun.eu.org/atom.xml"/>
     <subtitle>这里是末语小屋，主要发布一些多看排版的图书，和分享个人生活经验。</subtitle>
-    <logo>https://ltd0102.github.io/images/avatar.png</logo>
-    <icon>https://ltd0102.github.io/favicon.ico</icon>
+    <logo>https://moyun.eu.org/images/avatar.png</logo>
+    <icon>https://moyun.eu.org/favicon.ico</icon>
     <rights>All rights reserved 2020, Sakura00&apos;Blog</rights>
     <entry>
         <title type="html"><![CDATA[图片分享]]></title>
-        <id>https://ltd0102.github.io/PrqP3E_fQ/</id>
-        <link href="https://ltd0102.github.io/PrqP3E_fQ/">
+        <id>https://moyun.eu.org/PrqP3E_fQ/</id>
+        <link href="https://moyun.eu.org/PrqP3E_fQ/">
         </link>
         <updated>2020-06-05T12:46:12.000Z</updated>
         <content type="html"><![CDATA[<h2 id="新栏目图片分享">新栏目，图片分享</h2>
@@ -29,8 +29,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[视频直链测试]]></title>
-        <id>https://ltd0102.github.io/c_tcoA4en/</id>
-        <link href="https://ltd0102.github.io/c_tcoA4en/">
+        <id>https://moyun.eu.org/c_tcoA4en/</id>
+        <link href="https://moyun.eu.org/c_tcoA4en/">
         </link>
         <updated>2020-06-05T07:57:18.000Z</updated>
         <content type="html"><![CDATA[<h1 id="本视频下载自b站u主cj1213s所投稿视频">本视频下载自B站U主——cj1213s所投稿视频</h1>
@@ -55,8 +55,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[多看图书集中排版（1）]]></title>
-        <id>https://ltd0102.github.io/9SpKNciCg/</id>
-        <link href="https://ltd0102.github.io/9SpKNciCg/">
+        <id>https://moyun.eu.org/9SpKNciCg/</id>
+        <link href="https://moyun.eu.org/9SpKNciCg/">
         </link>
         <updated>2020-06-01T12:01:44.000Z</updated>
         <content type="html"><![CDATA[<h2 id="制作前言">制作前言</h2>
@@ -84,16 +84,16 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[音乐测试]]></title>
-        <id>https://ltd0102.github.io/vwVF98w3C/</id>
-        <link href="https://ltd0102.github.io/vwVF98w3C/">
+        <id>https://moyun.eu.org/vwVF98w3C/</id>
+        <link href="https://moyun.eu.org/vwVF98w3C/">
         </link>
         <updated>2020-05-31T11:31:41.000Z</updated>
         <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28785328&auto=1&height=66"></iframe>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[视频测试]]></title>
-        <id>https://ltd0102.github.io/kRqIc1PPT/</id>
-        <link href="https://ltd0102.github.io/kRqIc1PPT/">
+        <id>https://moyun.eu.org/kRqIc1PPT/</id>
+        <link href="https://moyun.eu.org/kRqIc1PPT/">
         </link>
         <updated>2020-05-31T11:19:43.000Z</updated>
         <content type="html"><![CDATA[<p>B站插入视频测试</p>
@@ -103,8 +103,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[关于我]]></title>
-        <id>https://ltd0102.github.io/Cq5WARBxo/</id>
-        <link href="https://ltd0102.github.io/Cq5WARBxo/">
+        <id>https://moyun.eu.org/Cq5WARBxo/</id>
+        <link href="https://moyun.eu.org/Cq5WARBxo/">
         </link>
         <updated>2020-05-16T09:29:03.000Z</updated>
         <content type="html"><![CDATA[<h1 id="网站是用来干嘛的">网站是用来干嘛的？</h1>
@@ -117,7 +117,7 @@
 <p>Github的空间，欧盟的域名，Cloudflare的域名解析和CDN，估计轮不到我头上吧。</p>
 <h1 id="广告时间">广告时间</h1>
 <p>请务必关注一下微信公众号吧<br>
-<img src="https://ltd0102.github.io/post-images/1590310502632.png" alt="" loading="lazy"></p>
+<img src="https://moyun.eu.org/post-images/1590310502632.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
