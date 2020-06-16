@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://moyun.eu.org</id>
     <title>Sakura00&apos;Blog</title>
-    <updated>2020-06-15T11:36:21.174Z</updated>
+    <updated>2020-06-16T08:31:39.398Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://moyun.eu.org"/>
     <link rel="self" href="https://moyun.eu.org/atom.xml"/>
@@ -10,6 +10,179 @@
     <logo>https://moyun.eu.org/images/avatar.png</logo>
     <icon>https://moyun.eu.org/favicon.ico</icon>
     <rights>All rights reserved 2020, Sakura00&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive]]></title>
+        <id>https://moyun.eu.org/njHhL-LCA/</id>
+        <link href="https://moyun.eu.org/njHhL-LCA/">
+        </link>
+        <updated>2020-06-16T08:29:46.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="利用-heroku-部署-aria2-离线下载并上传至-onedrive">利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive</h1>
+<h2 id="获取-5t-onedrive-账号">获取 5T OneDrive 账号</h2>
+<p>现在没有稳定的好的获取方法了，暂时不填。</p>
+<h2 id="无需服务器即可离线下载并自动上传到-onedrive">无需服务器即可离线下载并自动上传到 OneDrive</h2>
+<h3 id="首先注册-heroku-账号">首先注册 Heroku 账号</h3>
+<p>打开 https://www.heroku.com/<br>
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_f9476c8a4eb32d6b0b20566067503e4d.png" alt="2513114368.png" loading="lazy"></p>
+<h3 id="从-github-部署到-heroku">从 GitHub 部署到 Heroku</h3>
+<p>注册完成后打开 https://github.com/moeik/Heroku_aria2<br>
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_01c0aee4b861d4f6b6b3d58c3edb64e1.png" alt="3706352568.png" loading="lazy"><br>
+点击 Deploy to Heroku，然后会自动跳转到 Heroku 直接部署<br>
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_b143dcd042365f688aefcbcac0dcaaba.png" alt="1462096260.png" loading="lazy"></p>
+<h3 id="rclone-挂载-onedrive">Rclone 挂载 OneDrive</h3>
+<p>下载 Rclone：<a href="https://one.moeik.cn/rclone-v1.51.0-windows-amd64.zip">Downoad</a><br>
+解压打开如图：<br>
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_7c4dc5176d2ee9e5e8939d36597e24fa.png" alt="3683814369.png" loading="lazy"><br>
+打开这里的 cmd 运行：</p>
+<pre><code>rclone config
+</code></pre>
+<p>注意：如果运行 rclone config 出现报错请将 rclone.exe 移动到 C:/windows/system32 文件夹下然后打开系统 cmd 运行命令！<br>
+就会看到：</p>
+<pre><code>D:\rclone-v1.51.0-windows-amd64&gt;rclone config  //配置rclone
+No remotes found - make a new one
+n) New remote
+s) Set configuration password
+q) Quit config
+n/s/q&gt; n   //新建远程挂载
+name&gt; test  //名称（自定义）
+Type of storage to configure.
+Enter a string value. Press Enter for the default (&quot;&quot;).
+Choose a number from below, or type in your own value
+ 1 / 1Fichier
+   \ &quot;fichier&quot;
+ 2 / Alias for an existing remote
+   \ &quot;alias&quot;
+ 3 / Amazon Drive
+   \ &quot;amazon cloud drive&quot;
+ 4 / Amazon S3 Compliant Storage Provider (AWS, Alibaba, Ceph, Digital Ocean, Dreamhost, IBM COS, Minio, etc)
+   \ &quot;s3&quot;
+ 5 / Backblaze B2
+   \ &quot;b2&quot;
+ 6 / Box
+   \ &quot;box&quot;
+ 7 / Cache a remote
+   \ &quot;cache&quot;
+ 8 / Citrix Sharefile
+   \ &quot;sharefile&quot;
+ 9 / Dropbox
+   \ &quot;dropbox&quot;
+10 / Encrypt/Decrypt a remote
+   \ &quot;crypt&quot;
+11 / FTP Connection
+   \ &quot;ftp&quot;
+12 / Google Cloud Storage (this is not Google Drive)
+   \ &quot;google cloud storage&quot;
+13 / Google Drive
+   \ &quot;drive&quot;
+14 / Google Photos
+   \ &quot;google photos&quot;
+15 / Hubic
+   \ &quot;hubic&quot;
+16 / In memory object storage system.
+   \ &quot;memory&quot;
+17 / JottaCloud
+   \ &quot;jottacloud&quot;
+18 / Koofr
+   \ &quot;koofr&quot;
+19 / Local Disk
+   \ &quot;local&quot;
+20 / Mail.ru Cloud
+   \ &quot;mailru&quot;
+21 / Mega
+   \ &quot;mega&quot;
+22 / Microsoft Azure Blob Storage
+   \ &quot;azureblob&quot;
+23 / Microsoft OneDrive
+   \ &quot;onedrive&quot;
+24 / OpenDrive
+   \ &quot;opendrive&quot;
+25 / Openstack Swift (Rackspace Cloud Files, Memset Memstore, OVH)
+   \ &quot;swift&quot;
+26 / Pcloud
+   \ &quot;pcloud&quot;
+27 / Put.io
+   \ &quot;putio&quot;
+28 / QingCloud Object Storage
+   \ &quot;qingstor&quot;
+29 / SSH/SFTP Connection
+   \ &quot;sftp&quot;
+30 / Sugarsync
+   \ &quot;sugarsync&quot;
+31 / Transparently chunk/split large files
+   \ &quot;chunker&quot;
+32 / Union merges the contents of several remotes
+   \ &quot;union&quot;
+33 / Webdav
+   \ &quot;webdav&quot;
+34 / Yandex Disk
+   \ &quot;yandex&quot;
+35 / http Connection
+   \ &quot;http&quot;
+36 / premiumize.me
+   \ &quot;premiumizeme&quot;
+Storage&gt;23           //选择OneDrive
+** See help for onedrive backend at: https://rclone.org/onedrive/ **
+ 
+Microsoft App Client Id
+Leave blank normally.
+Enter a string value. Press Enter for the default (&quot;&quot;).
+client_id&gt;   //回车
+Microsoft App Client Secret
+Leave blank normally.
+Enter a string value. Press Enter for the default (&quot;&quot;).
+client_secret&gt;  //回车
+Edit advanced config? (y/n)
+y) Yes
+n) No (default)
+y/n&gt;  //回车
+Remote config
+Use auto config?
+ * Say Y if not sure
+ * Say N if you are working on a remote or headless machine
+y) Yes (default)
+n) No
+y/n&gt;  //回车
+</code></pre>
+<p>这时候会弹出浏览器让你登录 OneDrive<br>
+这里登录你要挂载的 OneDrive 账号<br>
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_f756793fbea23a7443572cdd389fce63.png" alt="557674030.png" loading="lazy"><br>
+看到这个页面就可以关闭浏览器了，回到 cmd<br>
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_e0a7510c3720c49f9927f54f73965b98.png" alt="798663521.png" loading="lazy"><br>
+获取成功</p>
+<pre><code>Choose a number from below, or type in an existing value
+ 1 / OneDrive Personal or Business
+   \ &quot;onedrive&quot;
+ 2 / Root Sharepoint site
+   \ &quot;sharepoint&quot;
+ 3 / Type in driveID
+   \ &quot;driveid&quot;
+ 4 / Type in SiteID
+   \ &quot;siteid&quot;
+ 5 / Search a Sharepoint site
+   \ &quot;search&quot;
+Your choice&gt; 1 //选择你的OneDrive版本
+Found 1 drives, please select the one you want to use:
+0: OneDrive (business) id=xxxxxxxxxxxxxxxxxxxxxxx
+Chose drive to use:&gt;0  //这里选择0
+Found drive 'root' of type 'business', URL: https://fordes-my.sharepoint.com/personal/cdm_fordes_top/Documents
+Is that okay?
+y) Yes (default)
+n) No
+y/n&gt; y //y回车
+</code></pre>
+<p>这时候关闭 cmd</p>
+<h3 id="heroku-配置填写">Heroku 配置填写</h3>
+<p>打开 <code>C:\Users\Administrator\.config\rclone\rclone.conf</code>路径不一定和我的一样，<code>Administrator</code>根据你自己的路径<br>
+每一项后面添加<code>\n</code>，如图：<br>
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_1571efb41c9fbffefe751f3da233e621.png" alt="2286006289.png" loading="lazy"><br>
+复制配置，从<code>type = ···</code>复制到<code>drive_type = ···</code><br>
+粘贴到 Heroku 里面的 RCLONE_CONFIG<br>
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_4c62f2f2a7e912a08df7182cf619a7be.png" alt="2794326387.png" loading="lazy"><br>
+最后点击 Deploy app 创建</p>
+<blockquote>
+<p>转载声明：转载自：https://aroins.com/67</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[图片分享（3）]]></title>
         <id>https://moyun.eu.org/7Q8OagoPj/</id>
