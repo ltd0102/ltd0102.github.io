@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://moyun.eu.org</id>
     <title>Sakura00&apos;Blog</title>
-    <updated>2020-06-16T08:32:13.189Z</updated>
+    <updated>2020-06-16T08:54:04.153Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://moyun.eu.org"/>
     <link rel="self" href="https://moyun.eu.org/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://moyun.eu.org/images/avatar.png</logo>
     <icon>https://moyun.eu.org/favicon.ico</icon>
     <rights>All rights reserved 2020, Sakura00&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[视频分享（1）]]></title>
+        <id>https://moyun.eu.org/8tNkMSljq/</id>
+        <link href="https://moyun.eu.org/8tNkMSljq/">
+        </link>
+        <updated>2020-06-16T08:51:27.000Z</updated>
+        <content type="html"><![CDATA[<p><video playsinline webkit-playsinline  controls src='https://pro-video.xiaoheiban.cn/202006/0fb9afb8-94c4-439d-99fc-45005e3df9a7.mp4' width='100%'></p>
+打上花火-DAOKO × 米津玄師 打ち上げ花火、下から見るか？横から見るか？ [piano]
+<p><video playsinline webkit-playsinline  controls src='https://pro-video.xiaoheiban.cn/fqt/3feb3966-52e7-4a76-99ec-5495494218b3.mp4' width='100%'></p>
+【Ayasa】告白の夜 (The reason why) 〜Ayasa Theater episode 7 ]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive]]></title>
         <id>https://moyun.eu.org/njHhL-LCA/</id>
