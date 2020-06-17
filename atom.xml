@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://moyun.eu.org</id>
     <title>Sakura00&apos;Blog</title>
-    <updated>2020-06-17T10:21:25.642Z</updated>
+    <updated>2020-06-17T10:31:17.666Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://moyun.eu.org"/>
     <link rel="self" href="https://moyun.eu.org/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://moyun.eu.org/images/avatar.png</logo>
     <icon>https://moyun.eu.org/favicon.ico</icon>
     <rights>All rights reserved 2020, Sakura00&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[为你的 HTML 网页添加高颜值粒子线条特效]]></title>
+        <id>https://moyun.eu.org/qKtOkMY5l/</id>
+        <link href="https://moyun.eu.org/qKtOkMY5l/">
+        </link>
+        <updated>2020-06-17T10:22:32.000Z</updated>
+        <content type="html"><![CDATA[<script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<h2 id="超高颜值粒子特效背景添加教程">超高颜值粒子特效背景添加教程</h2>
+<blockquote>
+<p>一个基于 html5 canvas 绘制的网页背景效果</p>
+</blockquote>
+<p>你也可以直接访问这个项目的<a href="https://github.com/hustcc/canvas-nest.js/blob/master/README-zh.md"> Github </a>进行查看文档。<br>
+或者访问<a href="https://git.hust.cc/canvas-nest.js/">演示网址</a>进行在线查看。<br>
+这篇文章已经使用了这个项目，你可以直接预览效果。</p>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="插入代码">插入代码</h3>
+<p>将这段代码插入你 HTML 的 和 之间。<br>
+<code>&lt;script type=&quot;text/javascript&quot; src=&quot;canvas-nest.min,js&quot;&gt;&lt;/script&gt;</code></p>
+<p>1.如果使用 Github 项目中的代码，需要提前下载<code>canvas-nest.min.js</code>这个<code>js</code>文件。<br>
+2.或者使用<a href="https://www.bootcdn.cn/canvas-nest.js/"> bootcdn</a>加速后的：<br>
+<code>&lt;script src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</code><br>
+注意请勿插入到<code>&lt;head&gt;</code>和<code>&lt;/head&gt;</code>之间</p>
+<h2 id="配置">配置</h2>
+<p>1.color: 线条颜色, 默认:<code>'0,0,0'</code>；三个数字分别为(R,G,B)，注意用,分割<br>
+2.pointColor: 交点颜色, 默认:<code>'0,0,0'</code>；三个数字分别为(R,G,B)，注意用,分割<br>
+3.opacity: 线条透明度（0~1）, 默认: <code>0.5</code><br>
+4.count: 线条的总数量, 默认: <code>150</code><br>
+5.zIndex: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1</p>
+<h2 id="example">Example</h2>
+<p><code>&lt;script type=&quot;text/javascript&quot; color=&quot;0,0,255&quot; opacity='0.7' zIndex=&quot;-2&quot; count=&quot;99&quot; src=&quot;dist/canvas-nest.js&quot;&gt;&lt;/script&gt;</code></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[如何给你的网站加上 Github Contributions Chart]]></title>
         <id>https://moyun.eu.org/TSe7y2jzx/</id>
@@ -331,13 +363,5 @@ y/n&gt; y //y回车
 <h2 id="公众号二维码">公众号二维码</h2>
 <figure data-type="image" tabindex="1"><img src="https://p.pstatp.com/origin/fe780000bfee0fa4c129" alt="二维码.png" loading="lazy"></figure>
 ]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[音乐测试]]></title>
-        <id>https://moyun.eu.org/vwVF98w3C/</id>
-        <link href="https://moyun.eu.org/vwVF98w3C/">
-        </link>
-        <updated>2020-05-31T11:31:41.000Z</updated>
-        <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28785328&auto=1&height=66"></iframe>]]></content>
     </entry>
 </feed>
