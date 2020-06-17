@@ -1,26 +1,29 @@
-<div class="post-container">
-  <% posts.forEach(function(post) { %>
-    <article class="post">
-      <a href="<%= post.link %>">
-        <h2 class="post-title"><%= post.title %></h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · <%= post.dateFormat %> ·
-        </time>
-        <% post.tags.forEach(function(tag) { %>
-          <a href="<%= tag.link %>" class="post-tag">
-            # <%= tag.name %>
-          </a>
-        <% }); %>
-      </div>
-      <% if (themeConfig.showFeatureImage && post.feature) { %>
-        <a href="<%= post.link %>" class="post-feature-image" style="background-image: url('<%= post.feature %>')">
-        </a>
-      <% } %>
-      <div class="post-abstract">
-        <%- post.searchedPreview %>
-      </di>
-    </article>
-  <% }); %>
+<div id="content" class="container">
+	<div class="row">
+		<div class="col-md-8 site-main">
+			<% posts.forEach(function(post) { %>
+			<article
+				class="wow zoomIn post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
+				<% if (themeConfig.showFeatureImage && post.feature) { %>
+				<a href="<%= post.link %>">
+					<div class="posttou" style="background-image:url(<%= post.feature %>)"></div>
+				</a>
+				<% } %>
+				<div class="entry-content">
+					<h1 class="entry-title"><a href="<%= post.link %>" rel="bookmark"><%= post.title %></a></h1>
+					<div class="entry-meta">
+						<i class="iconfont icon-rili"> <time class="lately-a" datetime="<%= post.date %>"
+								itemprop="datePublished" pubdate=""><%= post.dateFormat %></time></i>
+					</div>
+					<div class="entry-summary jia">
+						<%- post.searchedPreview %>
+						<p class="readmore">
+							<a href="<%= post.link %>" class="link-more">Read more</a>
+						</p>
+					</div>
+				</div>
+			</article>
+			<% }); %>
+		</div>
+	</div>
 </div>

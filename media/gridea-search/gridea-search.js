@@ -1,29 +1,34 @@
+/**
+ * https://github.com/tangkaichuan/gridea-search
+ */
+
+
 //获取url参数
 function getParam(url, param) {
     if (url.indexOf('?') > -1) {
         var urlSearch = url.split('?');
         var paramList = urlSearch[1].split('&');
         for (var i = paramList.length - 1; i >= 0; i--) {
-            var tep = paramList[i].split("=");
-            if (tep[0] == param) {
-                return tep[1];
+            var temp = paramList[i].split('=');
+            if (temp[0] === param) {
+                return temp[1];
             }
         }
     }
-};
+}
 
 //原生js Ajax 异步GET请求
 function ajax(obj) {
     var xhr = new XMLHttpRequest();
-    xhr.open("get", obj.url, true);
+    xhr.open('get', obj.url, true);
     xhr.send(null);
     xhr.onreadystatechange = function () {
         //异步请求：响应状态为4，数据加载完毕
-        if (xhr.readyState == 4)
+        if (xhr.readyState === 4)
             callback();
     }
     function callback() {
-        if (xhr.status == 200) {
+        if (xhr.status === 200) {
             obj.success(xhr.responseText);
         } else {
             obj.error(xhr.status);
@@ -33,30 +38,32 @@ function ajax(obj) {
 
 //模糊搜索
 function fuzzySearch(data, phrase) {
+    //配置见 https://github.com/krisk/fuse
     var options = {
         shouldSort: true,
         includeMatches: true,
         threshold: 0.5,
         location: 0,
-        distance: 1000,
+        distance: 10000,
         maxPatternLength: 32,
         minMatchCharLength: 1,
         keys: [
-            "title",
-            "content"
+            'title',
+            'content'
         ]
     };
     var fuse = new Fuse(data, options);
     var fuzzyResult = fuse.search(phrase);
     return fuzzyResult;
 }
+
 //检查缓存是否最新
 function checkCache() {
     var infosCache = JSON.parse(localStorage.getItem('InfosCache'));
     var contentsCache = JSON.parse(localStorage.getItem('ContentsCache'));
     if (infosCache && contentsCache) {
         var cachedTime = infosCache.utils.now.toString();
-        var updateTime = document.getElementById("gridea-search-form").getAttribute("data-update");
+        var updateTime = document.getElementById('gridea-search-form').getAttribute('data-update');
         if (cachedTime === updateTime) {
             return true;
         }
@@ -113,25 +120,25 @@ function searchBy(phrase, callback) {
 
 //显示无搜索结果
 function showNoResult() {
-    var resultDIV = document.getElementById("gridea-search-result");
-    var noResult = resultDIV.getElementsByClassName("no-result")[0];
-    noResult.style.display = "block";
+    var resultDIV = document.getElementById('gridea-search-result');
+    var noResult = resultDIV.getElementsByClassName('no-result')[0];
+    noResult.style.display = 'block';
     resultDIV.innerHTML = noResult.outerHTML;
 }
 
-//执行搜索
+//根据URL参数执行搜索
 function searchByParam(resultHandler) {
     var phrase = getParam(window.location.href, 'q');
-    if (phrase === '' || typeof (phrase) === "undefined") {
+    if (phrase === '' || typeof (phrase) === 'undefined') {
         showNoResult();
     } else {
-        searchBy(decodeURI(phrase), resultHandler);
+        searchBy(decodeURIComponent(phrase), resultHandler);
     }
 }
 
 //获取搜索结果列表模板的URL
 function getTemplateURL() {
-    var scripts = document.getElementsByTagName("script");
+    var scripts = document.getElementsByTagName('script');
     var templateURL = '';
     for (var i = 0; i < scripts.length; i++) {
         if (scripts[i].type === 'text/ejs') {
@@ -147,7 +154,7 @@ function renderResult(searchedInfos) {
         ajax({
             url: getTemplateURL(),
             success: function (data) {
-                var resultDIV = document.getElementById("gridea-search-result");
+                var resultDIV = document.getElementById('gridea-search-result');
                 resultDIV.innerHTML = ejs.compile(data)(searchedInfos);
             }
         });
@@ -163,9 +170,9 @@ function keywordsHighlight(searchedContent) {
     for (var i = 0; i < searchedContent.matches.length; i++) {
         if (searchedContent.matches[i].key === 'content') {//如果匹配到文章内容，截取关键字
             var indices = searchedContent.matches[i].indices[0];
-            var beforeKeyword = searchedPostContent.substring(indices[0] - 10, indices[0]);//关键字前20字
+            var beforeKeyword = searchedPostContent.substring(indices[0] - 10, indices[0]);//关键字前10字
             var keyword = searchedPostContent.substring(indices[0], indices[1] + 1);//关键字
-            var afterKeyword = searchedPostContent.substring(indices[1] + 1, indices[1] + 70);//关键字后80字
+            var afterKeyword = searchedPostContent.substring(indices[1] + 1, indices[1] + 70);//关键字后70字
             preview = beforeKeyword + '<span class="searched-keyword">'
                 + keyword + '</span>' + afterKeyword;
         } else {//没有匹配到文章内容，则是标题
@@ -197,7 +204,7 @@ function grideaSearch() {
     var resultHandler = function (searchedContents) {
         getInfos(function (infos) {
             //console.log(infos);
-            console.log(searchedContents);
+            //console.log(searchedContents);
             var searchedInfos = getResult(infos, searchedContents);
             renderResult(searchedInfos);
         });
