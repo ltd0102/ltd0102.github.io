@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://moyun.eu.org</id>
     <title>Sakura00&apos;Blog</title>
-    <updated>2020-07-08T06:30:59.094Z</updated>
+    <updated>2020-07-08T06:33:05.802Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://moyun.eu.org"/>
     <link rel="self" href="https://moyun.eu.org/atom.xml"/>
@@ -16,8 +16,9 @@
         <link href="https://moyun.eu.org/DtRrV_Tud/">
         </link>
         <updated>2020-07-08T06:25:02.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="http://moyun.cf/">短网址</a><br>
-<a href="https://api.mikumiku.cc/bing">Bing每日一图</a></p>
+        <content type="html"><![CDATA[<p>#<a href="http://moyun.cf/">短网址</a></p>
+<p>#Bing每日一图<br>
+<img src="https://api.mikumiku.cc/bing" alt="Bing每日一图" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
