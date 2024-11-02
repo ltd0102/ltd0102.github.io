@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://pilipili.eu.org</id>
+    <title>Moyu&apos;小屋</title>
+    <updated>2024-11-02T03:53:37.819Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://pilipili.eu.org"/>
+    <link rel="self" href="https://pilipili.eu.org/atom.xml"/>
+    <subtitle>这里是末语小屋，记录个人生活。</subtitle>
+    <logo>https://pilipili.eu.org/images/avatar.png</logo>
+    <icon>https://pilipili.eu.org/favicon.ico</icon>
+    <rights>All rights reserved 2024, Moyu&apos;小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[久违吐槽]]></title>
+        <id>https://pilipili.eu.org/Sr_eC9X0e1/</id>
+        <link href="https://pilipili.eu.org/Sr_eC9X0e1/">
+        </link>
+        <updated>2024-11-01T10:25:30.000Z</updated>
+        <content type="html"><![CDATA[<p>还是感觉好久没写点东西了，烦。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新年快乐]]></title>
+        <id>https://pilipili.eu.org/JcF2z3ZWR/</id>
+        <link href="https://pilipili.eu.org/JcF2z3ZWR/">
+        </link>
+        <updated>2023-12-31T14:25:17.000Z</updated>
+        <content type="html"><![CDATA[<p>希望新的一年能平平安安吧。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[个人导航]]></title>
+        <id>https://pilipili.eu.org/MmxdmBi1U/</id>
+        <link href="https://pilipili.eu.org/MmxdmBi1U/">
+        </link>
+        <updated>2023-09-04T14:37:36.000Z</updated>
+        <content type="html"><![CDATA[<p><strong><a href="https://ele.chng.com.cn/html/hn/index.html">华能E学</a></strong><br>
+<strong><a href="https://gkinto.com/"> 游戏大桶</a></strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[再次回归]]></title>
+        <id>https://pilipili.eu.org/BxX3hQ0Eu/</id>
+        <link href="https://pilipili.eu.org/BxX3hQ0Eu/">
+        </link>
+        <updated>2023-09-04T14:26:52.000Z</updated>
+        <content type="html"><![CDATA[<p>终究还是回到Github Pages了。希望能有个写作习惯。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Oracle Cloud(甲骨文)开启root登录]]></title>
+        <id>https://pilipili.eu.org/FIQb3CITM/</id>
+        <link href="https://pilipili.eu.org/FIQb3CITM/">
+        </link>
+        <updated>2022-11-05T13:02:37.000Z</updated>
+        <content type="html"><![CDATA[<p>使用密钥登录系统以后<br>
+执行如下命令</p>
+<pre><code>sudo -i
+</code></pre>
+<p>切换为root用户<br>
+接着输入</p>
+<pre><code>echo root:19960106ltd|sudo chpasswd root
+sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config;
+sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config;
+</code></pre>
+<p>其中19960106ltd为root的密码<br>
+重启sshd服务</p>
+<pre><code>sudo service sshd restart
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[久违的写作]]></title>
+        <id>https://pilipili.eu.org/bPJKEE21M/</id>
+        <link href="https://pilipili.eu.org/bPJKEE21M/">
+        </link>
+        <updated>2022-09-25T14:09:22.000Z</updated>
+        <content type="html"><![CDATA[<p>先占个坑</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27551005&auto=1&height=66"></iframe>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[名片]]></title>
+        <id>https://pilipili.eu.org/ipnNQ3Kq0/</id>
+        <link href="https://pilipili.eu.org/ipnNQ3Kq0/">
+        </link>
+        <updated>2020-10-05T13:37:24.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="hi-there">Hi there 👋</h3>
+<figure data-type="image" tabindex="1"><a href="https://github.com/ltd0102/stats"><img src="https://github-readme-stats.vercel.app/api?username=ltd0102&amp;theme=onedark" alt="Sakura00's github stats" loading="lazy"></a></figure>
+<ul>
+<li>
+<p>📫 How to reach me:</p>
+<ul>
+<li>
+<p>Telegram: <a href="https://t.me/Misaka_Misuzu">@Misaka_Misuzu</a></p>
+</li>
+<li>
+<p>Email:ltd0106@gmail.com</p>
+</li>
+<li>
+<p>Blog: <a href="https://moyun.eu.org/">Sakura00'Blog</a></p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[纪念]]></title>
+        <id>https://pilipili.eu.org/WCMQB1CH6/</id>
+        <link href="https://pilipili.eu.org/WCMQB1CH6/">
+        </link>
+        <updated>2020-09-18T12:17:10.000Z</updated>
+        <content type="html"><![CDATA[<p>哀莫大于心死。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ 个人网站备份]]></title>
+        <id>https://pilipili.eu.org/DtRrV_Tud/</id>
+        <link href="https://pilipili.eu.org/DtRrV_Tud/">
+        </link>
+        <updated>2020-07-08T06:25:02.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="短网址"><a href="http://moyun.cf/">短网址</a></h1>
+<h1 id="bing每日一图">Bing每日一图</h1>
+<figure data-type="image" tabindex="1"><img src="https://api.mikumiku.cc/bing" alt="Bing每日一图" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为你的 HTML 网页添加高颜值粒子线条特效]]></title>
+        <id>https://pilipili.eu.org/qKtOkMY5l/</id>
+        <link href="https://pilipili.eu.org/qKtOkMY5l/">
+        </link>
+        <updated>2020-06-17T10:22:32.000Z</updated>
+        <content type="html"><![CDATA[<script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<h2 id="超高颜值粒子特效背景添加教程">超高颜值粒子特效背景添加教程</h2>
+<blockquote>
+<p>一个基于 html5 canvas 绘制的网页背景效果</p>
+</blockquote>
+<p>你也可以直接访问这个项目的<a href="https://github.com/hustcc/canvas-nest.js/blob/master/README-zh.md"> Github </a>进行查看文档。<br>
+或者访问<a href="https://git.hust.cc/canvas-nest.js/">演示网址</a>进行在线查看。<br>
+这篇文章已经使用了这个项目，你可以直接预览效果。</p>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="插入代码">插入代码</h3>
+<p>将这段代码插入你 HTML 的 和 之间。<br>
+<code>&lt;script type=&quot;text/javascript&quot; src=&quot;canvas-nest.min,js&quot;&gt;&lt;/script&gt;</code></p>
+<p>1.如果使用 Github 项目中的代码，需要提前下载<code>canvas-nest.min.js</code>这个<code>js</code>文件。<br>
+2.或者使用<a href="https://www.bootcdn.cn/canvas-nest.js/"> bootcdn</a>加速后的：<br>
+<code>&lt;script src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</code><br>
+注意请勿插入到<code>&lt;head&gt;</code>和<code>&lt;/head&gt;</code>之间</p>
+<h2 id="配置">配置</h2>
+<p>1.color: 线条颜色, 默认:<code>'0,0,0'</code>；三个数字分别为(R,G,B)，注意用,分割<br>
+2.pointColor: 交点颜色, 默认:<code>'0,0,0'</code>；三个数字分别为(R,G,B)，注意用,分割<br>
+3.opacity: 线条透明度（0~1）, 默认: <code>0.5</code><br>
+4.count: 线条的总数量, 默认: <code>150</code><br>
+5.zIndex: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1</p>
+<h2 id="example">Example</h2>
+<p><code>&lt;script type=&quot;text/javascript&quot; color=&quot;0,0,255&quot; opacity='0.7' zIndex=&quot;-2&quot; count=&quot;99&quot; src=&quot;dist/canvas-nest.js&quot;&gt;&lt;/script&gt;</code></p>
+]]></content>
+    </entry>
+</feed>
