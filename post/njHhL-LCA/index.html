@@ -1,0 +1,370 @@
+<html>
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content="Gridea Pro 1.3.0-beta.2">
+<title>利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive | Gridea Pro</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1790678943">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive | Gridea Pro - Atom Feed" href="/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="教程" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+<meta name="description" content="获取 5T OneDrive 账号 现在没有稳定的好的获取方法了，暂时不填。 无需服务器即可离线下载并自动上传到 OneDrive 首先注册 Heroku 账号 打开 https://www.heroku.com/ ![1.png](https://shop.io.mi-img.com/app/sh&amp;hellip;">
+<link rel="canonical" href="https://pilipili.eu.org/post/njHhL-LCA/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive","url":"https://pilipili.eu.org/post/njHhL-LCA/","description":"获取 5T OneDrive 账号 现在没有稳定的好的获取方法了，暂时不填。 无需服务器即可离线下载并自动上传到 OneDrive 首先注册 Heroku 账号 打开 https://www.heroku.com/ ![1.png](https://shop.io.mi-img.com/app/sh\u0026hellip;","image":"https://shop.io.mi-img.com/app/shop/img?id=shop_f9bbce3826f89cd6cd6507c6d9df96ed.jpeg","datePublished":"2020-06-16T16:29:46+08:00","dateModified":"2020-06-16T16:29:46+08:00","author":{"@type":"Person","name":"Gridea Pro"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/images/avatar.png"},"name":"Gridea Pro"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://pilipili.eu.org","name":"Gridea Pro","position":1},{"@type":"ListItem","item":"https://pilipili.eu.org/post/njHhL-LCA/","name":"利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive","position":2}]}</script>
+<meta property="og:title" content="利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive">
+<meta property="og:description" content="获取 5T OneDrive 账号 现在没有稳定的好的获取方法了，暂时不填。 无需服务器即可离线下载并自动上传到 OneDrive 首先注册 Heroku 账号 打开 https://www.heroku.com/ ![1.png](https://shop.io.mi-img.com/app/sh&amp;hellip;">
+<meta property="og:url" content="https://pilipili.eu.org/post/njHhL-LCA/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gridea Pro">
+<meta property="og:image" content="https://shop.io.mi-img.com/app/shop/img?id=shop_f9bbce3826f89cd6cd6507c6d9df96ed.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://pilipili.eu.org/post/njHhL-LCA/">
+<meta name="twitter:title" content="利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive">
+<meta name="twitter:description" content="获取 5T OneDrive 账号 现在没有稳定的好的获取方法了，暂时不填。 无需服务器即可离线下载并自动上传到 OneDrive 首先注册 Heroku 账号 打开 https://www.heroku.com/ ![1.png](https://shop.io.mi-img.com/app/sh&amp;hellip;">
+<meta name="twitter:image" content="https://shop.io.mi-img.com/app/shop/img?id=shop_f9bbce3826f89cd6cd6507c6d9df96ed.jpeg">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-content">
+            
+<div class="site-header">
+    <a href="/">
+        <img class="avatar" src="/images/avatar.png?v=1790678943" alt="">
+    </a>
+    <h1 class="site-title">
+        Gridea Pro
+    </h1>
+    <p class="site-description">
+        Welcome to Gridea Pro
+    </p>
+    <div class="menu-container">
+        
+        
+        <a href="/" class="menu">
+            首页
+        </a>
+        
+        
+        
+        <a href="/post" class="menu">
+            博客
+        </a>
+        
+        
+        
+        <a href="/memos" class="menu">
+            闪念
+        </a>
+        
+        
+        
+        <a href="/archives" class="menu">
+            归档
+        </a>
+        
+        
+        
+        <a href="/tags" class="menu">
+            标签
+        </a>
+        
+        
+        
+        <a href="/links" class="menu">
+            友链
+        </a>
+        
+        
+        
+        <a href="/post/about" class="menu">
+            关于
+        </a>
+        
+        
+    </div>
+    <div class="social-container">
+        
+        
+        
+        
+        
+    </div>
+</div>
+
+            <div class="post-detail">
+                <article class="post">
+                    <h2 class="post-title">
+                        利用 Heroku 部署 Aria2 离线下载并上传至 OneDrive
+                    </h2>
+                    <div class="post-info">
+                        <span>
+                            2020-06-16
+                        </span>
+                        <span>
+                            7 分钟阅读
+                        </span>
+                        
+                        
+                        <a href="/tag/jiao-cheng/" class="post-tag">
+                            # 教程
+                        </a>
+                        
+                    </div>
+                    
+                    <img class="post-feature-image" src="https://shop.io.mi-img.com/app/shop/img?id=shop_f9bbce3826f89cd6cd6507c6d9df96ed.jpeg" alt="">
+                    
+                    <div class="post-content-wrapper">
+                        <div class="post-content" v-pre>
+                            <h2 id="-5t-onedrive-">获取 5T OneDrive 账号</h2>
+<p>现在没有稳定的好的获取方法了，暂时不填。</p>
+<h2 id="-onedrive">无需服务器即可离线下载并自动上传到 OneDrive</h2>
+<h3 id="-heroku-">首先注册 Heroku 账号</h3>
+<p>打开 <a href="https://www.heroku.com/">https://www.heroku.com/</a><br />
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_f9476c8a4eb32d6b0b20566067503e4d.png" alt="1.png" /></p>
+<h3 id="-github--heroku">从 GitHub 部署到 Heroku</h3>
+<p>注册完成后打开 <a href="https://github.com/moeik/Heroku_aria2">https://github.com/moeik/Heroku_aria2</a><br />
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_01c0aee4b861d4f6b6b3d58c3edb64e1.png" alt="2.png" /><br />
+点击 Deploy to Heroku，然后会自动跳转到 Heroku 直接部署<br />
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_b143dcd042365f688aefcbcac0dcaaba.png" alt="3.png" /></p>
+<h3 id="rclone--onedrive">Rclone 挂载 OneDrive</h3>
+<p>下载 Rclone：<a href="https://one.moeik.cn/rclone-v1.51.0-windows-amd64.zip">Downoad</a><br />
+解压打开如图：<br />
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_7c4dc5176d2ee9e5e8939d36597e24fa.png" alt="4.png" /><br />
+打开这里的 cmd 运行：</p>
+<pre><code>rclone config
+</code></pre>
+<p>注意：如果运行 rclone config 出现报错请将 rclone.exe 移动到 C:/windows/system32 文件夹下然后打开系统 cmd 运行命令！<br />
+就会看到：</p>
+<pre><code>D:\rclone-v1.51.0-windows-amd64&gt;rclone config  //配置rclone
+No remotes found - make a new one
+n) New remote
+s) Set configuration password
+q) Quit config
+n/s/q&gt; n   //新建远程挂载
+name&gt; test  //名称（自定义）
+Type of storage to configure.
+Enter a string value. Press Enter for the default (&quot;&quot;).
+Choose a number from below, or type in your own value
+ 1 / 1Fichier
+   \ &quot;fichier&quot;
+ 2 / Alias for an existing remote
+   \ &quot;alias&quot;
+ 3 / Amazon Drive
+   \ &quot;amazon cloud drive&quot;
+ 4 / Amazon S3 Compliant Storage Provider (AWS, Alibaba, Ceph, Digital Ocean, Dreamhost, IBM COS, Minio, etc)
+   \ &quot;s3&quot;
+ 5 / Backblaze B2
+   \ &quot;b2&quot;
+ 6 / Box
+   \ &quot;box&quot;
+ 7 / Cache a remote
+   \ &quot;cache&quot;
+ 8 / Citrix Sharefile
+   \ &quot;sharefile&quot;
+ 9 / Dropbox
+   \ &quot;dropbox&quot;
+10 / Encrypt/Decrypt a remote
+   \ &quot;crypt&quot;
+11 / FTP Connection
+   \ &quot;ftp&quot;
+12 / Google Cloud Storage (this is not Google Drive)
+   \ &quot;google cloud storage&quot;
+13 / Google Drive
+   \ &quot;drive&quot;
+14 / Google Photos
+   \ &quot;google photos&quot;
+15 / Hubic
+   \ &quot;hubic&quot;
+16 / In memory object storage system.
+   \ &quot;memory&quot;
+17 / JottaCloud
+   \ &quot;jottacloud&quot;
+18 / Koofr
+   \ &quot;koofr&quot;
+19 / Local Disk
+   \ &quot;local&quot;
+20 / Mail.ru Cloud
+   \ &quot;mailru&quot;
+21 / Mega
+   \ &quot;mega&quot;
+22 / Microsoft Azure Blob Storage
+   \ &quot;azureblob&quot;
+23 / Microsoft OneDrive
+   \ &quot;onedrive&quot;
+24 / OpenDrive
+   \ &quot;opendrive&quot;
+25 / Openstack Swift (Rackspace Cloud Files, Memset Memstore, OVH)
+   \ &quot;swift&quot;
+26 / Pcloud
+   \ &quot;pcloud&quot;
+27 / Put.io
+   \ &quot;putio&quot;
+28 / QingCloud Object Storage
+   \ &quot;qingstor&quot;
+29 / SSH/SFTP Connection
+   \ &quot;sftp&quot;
+30 / Sugarsync
+   \ &quot;sugarsync&quot;
+31 / Transparently chunk/split large files
+   \ &quot;chunker&quot;
+32 / Union merges the contents of several remotes
+   \ &quot;union&quot;
+33 / Webdav
+   \ &quot;webdav&quot;
+34 / Yandex Disk
+   \ &quot;yandex&quot;
+35 / http Connection
+   \ &quot;http&quot;
+36 / premiumize.me
+   \ &quot;premiumizeme&quot;
+Storage&gt;23           //选择OneDrive
+** See help for onedrive backend at: https://rclone.org/onedrive/ **
+ 
+Microsoft App Client Id
+Leave blank normally.
+Enter a string value. Press Enter for the default (&quot;&quot;).
+client_id&gt;   //回车
+Microsoft App Client Secret
+Leave blank normally.
+Enter a string value. Press Enter for the default (&quot;&quot;).
+client_secret&gt;  //回车
+Edit advanced config? (y/n)
+y) Yes
+n) No (default)
+y/n&gt;  //回车
+Remote config
+Use auto config?
+ * Say Y if not sure
+ * Say N if you are working on a remote or headless machine
+y) Yes (default)
+n) No
+y/n&gt;  //回车
+</code></pre>
+<p>这时候会弹出浏览器让你登录 OneDrive<br />
+这里登录你要挂载的 OneDrive 账号<br />
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_f756793fbea23a7443572cdd389fce63.png" alt="5.png" /><br />
+看到这个页面就可以关闭浏览器了，回到 cmd<br />
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_e0a7510c3720c49f9927f54f73965b98.png" alt="6.png" /><br />
+获取成功</p>
+<pre><code>Choose a number from below, or type in an existing value
+ 1 / OneDrive Personal or Business
+   \ &quot;onedrive&quot;
+ 2 / Root Sharepoint site
+   \ &quot;sharepoint&quot;
+ 3 / Type in driveID
+   \ &quot;driveid&quot;
+ 4 / Type in SiteID
+   \ &quot;siteid&quot;
+ 5 / Search a Sharepoint site
+   \ &quot;search&quot;
+Your choice&gt; 1 //选择你的OneDrive版本
+Found 1 drives, please select the one you want to use:
+0: OneDrive (business) id=xxxxxxxxxxxxxxxxxxxxxxx
+Chose drive to use:&gt;0  //这里选择0
+Found drive 'root' of type 'business', URL: https://fordes-my.sharepoint.com/personal/cdm_fordes_top/Documents
+Is that okay?
+y) Yes (default)
+n) No
+y/n&gt; y //y回车
+</code></pre>
+<p>这时候关闭 cmd</p>
+<h3 id="heroku-">Heroku 配置填写</h3>
+<p>打开 <code>C:\Users\Administrator\.config\rclone\rclone.conf</code>路径不一定和我的一样，<code>Administrator </code>根据你自己的路径<br />
+每一项后面添加<code> \n</code>，如图：<br />
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_1571efb41c9fbffefe751f3da233e621.png" alt="7.png" /><br />
+复制配置，从<code>type = ···</code>复制到<code>drive_type = ···</code><br />
+粘贴到 Heroku 里面的 RCLONE_CONFIG<br />
+<img src="https://shop.io.mi-img.com/app/shop/img?id=shop_4c62f2f2a7e912a08df7182cf619a7be.png" alt="8.png" /><br />
+最后点击 Deploy app 创建</p>
+<blockquote>
+<p>转载声明：转载自：<a href="https://aroins.com/67">https://aroins.com/67</a></p>
+</blockquote>
+
+                        </div>
+                        <div class="toc-container">
+                            
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            
+            <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="/post/7Q8OagoPj/">
+                    <h3 class="post-title">
+                        图片分享（3）
+                    </h3>
+                </a>
+            </div>
+            
+
+            
+
+            
+<div class="site-footer">
+    Powered by Gridea Pro
+    <a class="rss" href="/atom.xml" target="_blank">
+        <i class="ri-rss-line"></i> RSS
+    </a>
+</div>
+
+        </div>
+    </div>
+
+    <script>
+        hljs.initHighlightingOnLoad()
+
+        let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        window.addEventListener("scroll", event => {
+            let fromTop = window.scrollY;
+
+            mainNavLinks.forEach((link, index) => {
+                let section = document.getElementById(decodeURI(link.hash).substring(1));
+                let nextSection = null
+                if (mainNavLinks[index + 1]) {
+                    nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+                }
+                if (section.offsetTop <= fromTop) {
+                    if (nextSection) {
+                        if (nextSection.offsetTop > fromTop) {
+                            link.classList.add("current");
+                        } else {
+                            link.classList.remove("current");
+                        }
+                    } else {
+                        link.classList.add("current");
+                    }
+                } else {
+                    link.classList.remove("current");
+                }
+            });
+        });
+
+    </script>
+<script>console.log("\n%c ✦ Gridea Pro v1.3.0-beta.2 %c · Theme: inotes v1.0.0 · https://gridea.pro %c\n","color:#fadfa3;background:#111111;padding:9px 14px;border-radius:4px 0 0 4px;font-weight:500;font-size:12px","color:#e05c00;background:#fff3ec;padding:9px 14px;border-radius:0 4px 4px 0;font-size:11px","")</script>
+</body>
+
+</html>
