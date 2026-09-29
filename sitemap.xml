@@ -2,15 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pilipili.eu.org/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://pilipili.eu.org/post/hello-gridea-pro/</loc>
-    <lastmod>2026-09-29T18:41:46+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/post/Cq5WARBxo/</loc>
@@ -20,30 +14,6 @@
     <image:image>
       <image:loc>https://s1.ax1x.com/2020/05/24/tSE3ZV.jpg</image:loc>
     </image:image>
-  </url>
-  <url>
-    <loc>https://pilipili.eu.org/post/quick-start/</loc>
-    <lastmod>2026-09-29T18:40:46+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://pilipili.eu.org/post/why-we-write/</loc>
-    <lastmod>2026-09-29T18:39:46+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://pilipili.eu.org/post/indie-blog-is-not-dead/</loc>
-    <lastmod>2026-09-29T18:38:46+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://pilipili.eu.org/post/why-i-revived-gridea/</loc>
-    <lastmod>2026-09-29T18:37:46+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/post/4C1NBX-i78/</loc>
@@ -218,79 +188,61 @@
   </url>
   <url>
     <loc>https://pilipili.eu.org/post/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/memos/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/tags/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/archives/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pilipili.eu.org/tag/gridea/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://pilipili.eu.org/tag/gridea-pro/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://pilipili.eu.org/tag/getting-started/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://pilipili.eu.org/tag/jiao-cheng/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/tag/qi-ta/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/tag/ce-shi/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/tag/fen-xiang/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/tag/duo-kan-pai-ban/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://pilipili.eu.org/links/</loc>
-    <lastmod>2026-09-29T19:08:34+08:00</lastmod>
+    <lastmod>2026-09-29T19:11:19+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
